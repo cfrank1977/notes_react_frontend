@@ -1,0 +1,35 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "notesclient-20180905133758-authRole",
+			"UnauthRoleArn": "arn:aws:iam::741205893043:role/notesclient-20180905133758-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::741205893043:role/notesclient-20180905133758-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "notesclient-20180905133758-deployment",
+			"UnauthRoleName": "notesclient-20180905133758-unauthRole",
+			"StackName": "notesclient-20180905133758",
+			"StackId": "arn:aws:cloudformation:us-east-1:741205893043:stack/notesclient-20180905133758/6ebdbe10-b132-11e8-ad1b-50a686e4bbe6"
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/notesclient-20180905133758-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2018-09-05T18:01:11.700Z",
+			"output": {
+				"CloudFrontSecureURL": "https://d34wgm1ei37t11.cloudfront.net",
+				"S3BucketSecureURL": "https://notesclient-20180905133939--hostingbucket.s3.amazonaws.com",
+				"WebsiteURL": "http://notesclient-20180905133939--hostingbucket.s3-website-us-east-1.amazonaws.com",
+				"CloudFrontDistributionID": "E308NJ71G6X4YM",
+				"Region": "us-east-1",
+				"HostingBucketName": "notesclient-20180905133939--hostingbucket",
+				"CloudFrontDomainName": "d34wgm1ei37t11.cloudfront.net"
+			},
+			"lastPushDirHash": "gThJOBpXBQ7QRdXJKxDhe5paLxw="
+		}
+	}
+}
